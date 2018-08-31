@@ -4,19 +4,10 @@ namespace Hope.Ethereum.PRPS
 {
     public sealed class DUBIToken : ERC20
     {
-        public DUBIToken(string mainnetAddress, string rinkebyAddress) : base(mainnetAddress, rinkebyAddress)
-        {
-        }
+        private const string DUBI_MAINNET = "";
+        private const string DUBI_RINKEBY = "";
 
-        public DUBIToken(string mainnetAddress) : base(mainnetAddress)
-        {
-        }
-
-        public DUBIToken(string mainnetAddress, string name, string symbol, int decimals) : base(mainnetAddress, name, symbol, decimals)
-        {
-        }
-
-        public DUBIToken(string mainnetAddress, string rinkebyAddress, string name, string symbol, int decimals) : base(mainnetAddress, rinkebyAddress, name, symbol, decimals)
+        public DUBIToken() : base(DUBI_MAINNET, DUBI_RINKEBY, "Decentralized Universal Basic Income", "DUBI", 18)
         {
         }
     }
