@@ -121,11 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Token Contracts\DUBIToken.cs" />
-    <Compile Include="src\Token Contracts\PRPSToken.cs" />
+    <Compile Include="src\Other Contracts\Hodler.cs" />
+    <Compile Include="src\Token Contracts\DUBI.cs" />
+    <Compile Include="src\Token Contracts\PRPS.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\Other Contracts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
