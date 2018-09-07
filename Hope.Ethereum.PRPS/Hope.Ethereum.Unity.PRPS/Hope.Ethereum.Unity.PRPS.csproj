@@ -52,9 +52,6 @@
     <Reference Include="Nethereum.HdWallet">
       <HintPath>..\packages\Hope.Ethereum.Unity.PRPS Packages\Nethereum.HdWallet.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.Hex">
-      <HintPath>..\packages\Hope.Ethereum.Unity.PRPS Packages\Nethereum.Hex.dll</HintPath>
-    </Reference>
     <Reference Include="Nethereum.JsonRpc.Client">
       <HintPath>..\packages\Hope.Ethereum.Unity.PRPS Packages\Nethereum.JsonRpc.Client.dll</HintPath>
     </Reference>
@@ -81,6 +78,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,7 +91,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Other Contracts\Hodler.cs" />
+    <Compile Include="src\Hodler Contract\Hodler.cs" />
+    <Compile Include="src\Hodler Contract\Messages\Hodler.Messages.Hodl.cs" />
+    <Compile Include="src\Hodler Contract\Messages\Hodler.Messages.Release.cs" />
+    <Compile Include="src\Hodler Contract\Output\Hodler.Output.Item.cs" />
+    <Compile Include="src\Hodler Contract\Queries\Hodler.Queries.GetItem.cs" />
     <Compile Include="src\Token Contracts\DUBI.cs" />
     <Compile Include="src\Token Contracts\PRPS.cs" />
   </ItemGroup>
