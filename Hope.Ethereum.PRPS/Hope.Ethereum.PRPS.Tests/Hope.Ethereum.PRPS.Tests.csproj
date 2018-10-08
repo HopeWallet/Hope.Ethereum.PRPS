@@ -39,23 +39,103 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hope.Ethereum">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Hope.Ethereum.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="NBitcoin">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\NBitcoin.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.ABI">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.ABI.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Accounts">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Contracts">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Geth">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Geth.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.HdWallet">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.HdWallet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Hex">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Hex.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.Client">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.JsonRpc.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.IpcClient">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.JsonRpc.IpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.RpcClient">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.JsonRpc.RpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.WebSocketClient">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.JsonRpc.WebSocketClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.KeyStore">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.KeyStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Parity">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Parity.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Quorum">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Quorum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RLP">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.RLP.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RPC">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.RPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Signer">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Signer.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.StandardTokenEIP20">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.StandardTokenEIP20.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Unity">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Util">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Web3">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Nethereum.Web3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Hope.Ethereum.PRPS Packages\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <ProjectReference Include="..\Hope.Ethereum.PRPS\Hope.Ethereum.PRPS.csproj">
+      <Project>{988DF36E-1B9E-46D9-A35C-E8F9A2EB46DB}</Project>
+      <Name>Hope.Ethereum.PRPS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
